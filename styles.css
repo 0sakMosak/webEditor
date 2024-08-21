@@ -1,0 +1,98 @@
+body * {
+    font-family: 'Arial Black';
+}
+
+html, body {
+    height: 100%;
+}
+
+
+
+
+
+
+textarea {
+    resize: none;
+    height: 98%;
+    width: 99.5%;
+    font-size: 200%;
+}
+
+
+#fileButton {
+    z-index: 1;
+    background-color: rgba(123, 123, 123, 0.403);
+}
+
+button, select {
+    font-size: 200%;
+    border: solid white;
+    background: none;
+}
+
+button:hover {
+    background: rgb(229, 229, 229);
+    border-radius: 15px;
+}
+
+button:active {
+    border: solid rgb(123, 123, 123);
+}
+
+Nav {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hiddenBackground {
+    z-index: 0;
+    display: none;
+}
+
+.visible {
+    display: block;
+    position: absolute;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.fileSelection {
+    display: none;
+}
+
+.fileSelectionOpen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    z-index: 1;
+
+    position: absolute;
+    bottom: 50%;
+    right: 44%;
+
+    border: solid black;
+    background: white;
+}

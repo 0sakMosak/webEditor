@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oskar's Text Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <Nav>
+        <div class="hiddenBackground"></div>
+        <button id="fileButton" onclick="toggleFileSelection()">file</button>
+
+        <div class="fileSelection">
+            <div><button class="hiddenBeforeFileButton" id="save" onclick="saveTextAsFile()">save file</button><input type="text" name="fileName" id="fileName" style="font-size: 120%;"></div>
+
+            <br>
+            <button id="openFileButton" onclick="document.getElementById('fileInput').click()">Open File</button>
+            <input type="file" id="fileInput" style="visibility:hidden;">
+            <!-- <button class="hiddenBeforeFileButton" id="open" onclick="readSingleFile()">open file</button> -->
+        </div>
+
+        <button>Help</button>
+    </Nav>
+
+    <Body>
+        <textarea name="textarea" id="content"></textarea>
+    </Body>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
